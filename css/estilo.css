@@ -1,0 +1,339 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MENU */
+#menu-celular {
+	display: none;
+}
+#menu {
+	display: flex;
+	justify-content: center;
+}
+
+#menu h1 {
+	font-size: 1.5em;
+	padding: 20px;
+}
+#menu ul {
+	list-style: none;
+	width: 55%;
+	display: flex;
+	margin-top: 20px;
+}
+#menu ul li:last-child {
+	margin-left: 50%;
+}
+#menu ul a {
+	text-decoration: none;
+	color: gray;
+	font-size: 0.8em;
+	display: block;
+	padding: 10px 20px 10px 20px;
+}
+
+/* BANNER FOTO */
+#banner {
+	margin:  0 auto;
+	width: 100%;
+}
+#banner img {
+	width: 100%;
+}
+/* CONTEUDO */
+#conteudo {
+	width: 65%;
+	margin: 40px auto;
+	text-align: center;
+}
+
+#conteudo h1 {
+	width: 50%;
+	margin: 0 auto;
+	padding: 100px;
+	flex-grow: 1;
+}
+#texto {
+	border-bottom: 1px solid gray;
+}
+
+/* fotos */
+#ft {
+	display: flex;
+	margin-top: 100px;
+	width: 100%;
+	flex-wrap: wrap; 
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.fotos {
+	max-width: 380px;
+}
+.fotos img {
+	width: 100%;
+}
+.fotos p, .fotos h3 {
+	text-align: left;
+	margin-bottom: 30px;
+	color: gray;
+}
+.fotos input {
+	width: 150px;
+	height: 45px;
+	background: #fff;
+	color: #000;
+	border: 2px solid black;
+	margin-top: 10px;
+	float: left;
+	border-radius: 8px;
+}
+.fotos input:hover {
+	-webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+/* instagram */
+#insta {
+	border-top: 1px solid gray;
+	margin-bottom: 100px;
+}
+#foto {
+	display: flex;
+	height: 550px;
+}
+#foto-insta {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: 10%;
+	height: 595px;
+}
+#foto-insta img {
+	height: 250px;
+}
+/* RODAPÉ */
+#footer {
+	border-top: 1px solid gray;
+	width: 130%;
+	margin-left: -200px;
+	color:gray;
+}
+
+/* Tela de até 1440px ---------------------------------------------------------------------- */
+
+@media (max-width: 1440px) {
+	#conteudo h1 {
+		width: 65%;
+	}
+	#ft {
+		justify-content: flex-start;
+	}
+	.fotos {
+		max-width: 300px;
+		margin-left: 15px;
+	}
+	.fotos:first-child {
+		margin-left: 0;
+	}
+	/* instagram */
+	#foto {
+		height: 478px; /* Tamanho da Foto Grande */
+	}
+	#foto img {
+		width: 50%;
+	}
+	#foto-insta {
+		margin-left: 5%;
+		height: 495px;
+	}
+	#foto-insta img {
+		width: 48%;
+		height: 230px;
+	}
+}
+
+/* Tela de até 1024px ---------------------------------------------------------------------- */
+
+
+@media (max-width: 1024px) {
+	/* MENU */
+	#menu {
+		justify-content: center;
+	}
+	#menu h1 {
+		font-size: 1.2em;
+		padding: 20px;
+	}
+	#menu ul {
+		margin-top: 15px;
+		width: 60%;
+	}
+	#menu ul li:last-child {
+		margin-left: 40%;
+	}
+	#menu ul a {
+		font-size: 0.7em;
+		padding: 10px;
+	}
+	/* CONTEUDO */
+	#conteudo {
+		width: 75%;
+	}
+	#conteudo h1 {
+		width: 70%;
+		padding: 70px;
+	}
+	/* fotos */
+	#ft {
+		justify-content: flex-start;
+	}
+	.fotos {
+		max-width: 249px;
+		margin-left: 10px;
+	}
+	.fotos:first-child {
+		margin-left: 0;
+	}
+	.fotos input {
+		width: 100px;
+	}
+	/* instagram */
+	#foto {
+		height: 348px; /* Tamanho da Foto Grande */
+	}
+	#foto img {
+		width: 55%;
+	}
+	#foto-insta {
+		margin-left: 5%;
+		height: 395px;
+	}
+	#foto-insta img {
+		width: 48%;
+		height: 150px;
+	}
+	/* RODAPÉ */
+	#footer {
+		width: 100%;
+		margin-left: 0px;
+		color:gray;
+	}
+}
+
+/* Tela de até 768px ---------------------------------------------------------------------- */
+
+
+@media (max-width: 768px) {
+	/* MENU */
+	#menu {
+		justify-content: center;
+	}
+	#menu h1 {
+		font-size: 0.8em;
+		padding: 10px;
+	}
+	#menu ul {
+		margin-top: 0;
+		width: 60%;
+	}
+	#menu ul li:last-child {
+		margin-left: 100px;
+	}
+	#menu ul a {
+		font-size: 0.7em;
+		padding: 12px 10px;
+	}
+	#banner {
+		width: 100%;
+	}
+	/* CONTEUDO */
+	#conteudo {
+		width: 80%;
+		margin: 0 auto;
+	}
+	#conteudo h1 {
+		width: 70%;
+		padding: 70px;
+	}
+	/* fotos */
+	#ft {
+		margin-top: 40px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.fotos {
+		margin-top: 30px;
+		max-width: 380px;
+	}
+	/* INSTAGRAM */
+	#foto {
+		height: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#foto-insta {
+		justify-content: space-between;
+		margin-left: 0;
+		height: 595px;
+		margin-top: 40px;
+		width: 90%;
+	}
+	/* RODAPÉ */
+	#footer {
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+/* Tela de até 425px ---------------------------------------------------------------------- */
+
+@media (max-width: 425px) {
+	#menu {
+		justify-content: flex-start;
+	}
+	#menu ul {
+		display: none;
+	}
+	#menu-celular {
+		display: inline;
+		margin: 10px 0 0 20px;
+	}
+	/* CONTEUDO */
+	#conteudo {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#conteudo h1 {
+		width: 100%;
+		padding: 30px 0 20px 0;
+		font-size: 1.2em;
+	}
+	/* FOTOS */
+	#ft {
+		margin-top: 40px;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.fotos {
+		max-width: 380px;
+		width: 95%;
+		margin: 20px 0 5px 0;
+	}
+	/* INSTAGRAM */
+	#foto-insta {
+		height: 375px;
+		width: 95%;
+	}
+	#foto {
+		height: 650px;
+	}
+	#foto .dest {
+		width: 80%;
+	}
+}
